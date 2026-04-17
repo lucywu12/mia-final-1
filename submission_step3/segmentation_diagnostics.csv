@@ -1,0 +1,6 @@
+anchor_id,image_path,status,height,width,vessel_ratio,npz_path,png_path,error
+anchor_01,/Volumes/LUCY DISK/mia/Project 1/example test/anchor_images/anchor_01.tiff,ok,2912,2912,0.033711395060982974,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_01.npz,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_01.png,
+anchor_02,/Volumes/LUCY DISK/mia/Project 1/example test/anchor_images/anchor_02.tiff,ok,2912,2912,0.02612177914804975,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_02.npz,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_02.png,
+anchor_03,/Volumes/LUCY DISK/mia/Project 1/example test/anchor_images/anchor_03.tiff,ok,2912,2912,0.03479869203598599,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_03.npz,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_03.png,
+anchor_04,/Volumes/LUCY DISK/mia/Project 1/example test/anchor_images/anchor_04.tiff,ok,2912,2912,0.02381864358169303,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_04.npz,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_04.png,
+anchor_05,/Volumes/LUCY DISK/mia/Project 1/example test/anchor_images/anchor_05.tiff,ok,2912,2912,0.035409441605784325,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_05.npz,/Users/lucywu/mia-final-1/submission_step3/segmentation/anchor_05.png,

@@ -25,7 +25,22 @@ def is_image_file(path: Path) -> bool:
 
 def list_image_files(folder: Path) -> List[Path]:
     """List all image files in a folder, sorted."""
-    files = [p for p in sorted(folder.iterdir()) if is_image_file(p)]
+    folder = Path(folder)
+    if not folder.exists():
+        raise FileNotFoundError(f"Image folder does not exist: {folder}")
+    if not folder.is_dir():
+        raise NotADirectoryError(f"Expected a directory but got: {folder}")
+
+    try:
+        entries = sorted(folder.iterdir())
+    except PermissionError as exc:
+        raise PermissionError(
+            f"Cannot read directory: {folder}. "
+            "On macOS, grant Files and Folders access to the Python/Jupyter app for external volumes, "
+            "and verify the path is correct (for example, anchor_images vs anchor_image)."
+        ) from exc
+
+    files = [p for p in entries if is_image_file(p)]
     if not files:
         raise FileNotFoundError(f"No image files found in: {folder}")
     return files
